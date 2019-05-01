@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    Nhap a=
+    <input type="number" id="q"> <br>
+    Nhap b=
+    <input type="number" id="w"> <br>
+    Ket qua=
+    <input type="text" id="kq">
+    <button type="button" onclick="ketqua()">onclick</button>>
+
+    <script>
+        function ketqua() {
+            let a = parseInt(document.getElementById("q"))
+            let b = parseInt(document.getElementById("w"))
+            if ((a + b) < 4) {
+                document.getElementById("kq").value = 'Below';
+            } else {
+                document.getElementById("kq").value = ' Over';
+            }
+        }
+    </script>
+</form>
+
+</body>
+</html>
